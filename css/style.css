@@ -8,6 +8,10 @@ body {
   font-size: 1vw;
 }
 
+main {
+  margin: 0 2em;
+}
+
 /* NAVIGATION HEADER */
 
 .page-nav {
@@ -94,14 +98,49 @@ p.page-nav-button-desc {
   display: grid;
   grid-template-columns: auto auto;
   height: 50em;
-
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
+  margin-top: 1px;
+  grid-gap: 1px;
 }
 
 .latest-article {
-  background-color: #555;
   max-height: 25em;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-header {
+  height: 6em;
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.writers-image {
+  width: 6em;
+  background-color: #334;
+}
+
+.writers-name {
+  background-color: #777;
+  flex: 1;
+  margin-left: 1px;
+}
+
+.article-description {
+  height: auto;
+  background-color: #aaa;
+  flex: 1;
+}
+
+.article-comments {
+  background-color: #666;
+  height: 2em;
+  margin-top: 1px;
+}
+
+.article-arrow {
+  margin-top: 1px;
+  background-color: #666;
+  height: 2em;
 }
 
 /* LATEST POSTS */
