@@ -15,7 +15,7 @@ main {
 /* NAVIGATION HEADER */
 
 .page-nav {
-  background-color: #ccc;
+  /* background-color: #ccc; */
   height: 13em;
   margin-bottom: 1px;
   display: flex;
@@ -33,7 +33,7 @@ main {
 
 .page-nav-central-panel {
   width: auto;
-  background-color: #aaa;
+  /* background-color: #aaa; */
   margin: 0 0.5em;
   flex: 5;
   display: flex;
@@ -57,6 +57,7 @@ main {
   font-size: 1.5em;
   margin: 0.5em 0 0.2em 0;
 }
+
 .page-nav-img {
   width: 2.5em;
   height: 2.5em;
@@ -96,16 +97,20 @@ p.page-nav-button-desc {
 
 .latest-articles-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   height: 50em;
   margin-top: 1px;
   grid-gap: 1px;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  /* background-color:yellow; */
 }
-
+ 
 .latest-article {
-  max-height: 25em;
+  /* max-height: 25em; */
   display: flex;
   flex-direction: column;
+  
 }
 
 .article-header {
@@ -126,21 +131,42 @@ p.page-nav-button-desc {
 }
 
 .article-description {
-  height: auto;
+  padding-top: 0.5em;
+  /* height: auto; */
   background-color: #aaa;
   flex: 1;
+  font-size: 3em;
+}
+
+.article-description::after {
+  content: "Leave a comment";
+  font-size: 0.5em;
+  color: #77e;
 }
 
 .article-comments {
-  background-color: #666;
+  /* background-color: #666; */
   height: 2em;
   margin-top: 1px;
+  display: flex;
+  justify-items: flex-start;
 }
 
+.article-comments-type {
+  background-color: #666;
+  width: 10em;
+  margin-right: 0.2em;
+  height: 100%;
+}
 .article-arrow {
   margin-top: 1px;
   background-color: #666;
   height: 2em;
+  width: 10em;
+  background-image: url("../images/arrow-right.png");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  background-size: 2em 2em;
 }
 
 /* LATEST POSTS */
@@ -149,20 +175,45 @@ p.page-nav-button-desc {
   display: grid;
   grid-template-columns: auto auto auto;
   min-height: 80em;
-  background-color: #aaa;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  margin-top: 0.5em;
+  /* background-color: #aaa; */
+  grid-gap: 1px;
+  margin-top: 2em;
   width: 100%;
 }
 
 .latest-post-item {
-  background-color: #555;
+  /* background-color: #555; */
   height: 25em;
+  display: flex;
+  flex-direction: column;
 }
 
 .tall-item {
   height: 40em;
+  background-color: #555;
+}
+
+.latest-post-description {
+  height: 6em;
+  background-color: #333;
+}
+
+.latest-post-write {
+  height: 2em;
+  background-color: #444;
+  margin-top: 1px;
+}
+
+.latest-post-breaf {
+  background-color: #999;
+  flex: 1;
+  margin-top: 1px;
+}
+
+.latest-post-arrow {
+  height: 2em;
+  background-color: #888;
+  margin-top: 1px;
 }
 
 .latest-posts-footer p {
