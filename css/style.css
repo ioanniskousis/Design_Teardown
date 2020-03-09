@@ -141,3 +141,45 @@ body {
   width: 15%;
   border-bottom: 3px solid red;
 }
+
+/* PAGE FOOTER */
+
+.page-footer {
+  margin-top: 1em;
+  background-color: #ccc;
+  height: 40em;
+}
+
+.browse-topics {
+  height: 5em;
+  background-color: #aaa;
+}
+
+.browse-links {
+  height: 15em;
+  background-color: #575;
+}
+
+.browse-bottom {
+  background-color: #aaa;
+  height: 20em;
+  display: flex;
+}
+
+.browse-bottom-left, .browse-bottom-right {
+  width: 30%;
+}
+
+.browse-bottom-center {
+  width: 40%;
+  background-color: #999;
+}
+
+.browse-bottom-center-lower {
+  background-color: #575;
+  height: 50%;
+}
+
+.browse-bottom-center-upper {
+  height: 50%;
+}
