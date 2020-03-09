@@ -14,6 +14,8 @@ body {
 
 }
 
+/* LATEST ARTICLES */
+
 .latest-articles-header {
   background-color: #aaa;
   height: 6em;
@@ -32,6 +34,8 @@ body {
   background-color: #555;
   max-height: 25em;
 }
+
+/* LATEST POSTS */
 
 .latest-posts {
   display: grid;
@@ -58,5 +62,82 @@ body {
   text-align: center;
   width: 15%;  
   /*width: auto;*/
+  border-bottom: 3px solid red;
+}
+
+/* COMMUNITY LINKS */
+
+.person-of-the-week {
+  display: flex;
+  height: 16em;
+
+}
+
+.person-of-the-week-img {
+  width: 48em;
+  background-color: #555;
+}
+
+.person-of-the-week-text {
+  background-color: #888;
+  width: auto;
+}
+
+.community-links {
+  height: 60em;
+  background-color: #8f8;
+  margin-top: 1em;
+}
+
+.community-links-grid {
+  font-size: 3em;
+  color: #fff;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  height: 85%;
+  /* max-height: 40em; */
+  background-color: #77f;
+}
+
+.community-link {
+  background-color: #555;
+  /* height: 10em; */
+}
+
+.community-links-footer {
+  margin: 2em auto;
+  width: 14%;
+  border-bottom: 3px solid red;
+  text-align: center;
+}
+
+/* CURATED POSTS */
+
+.curated-posts {
+  margin-top: 5em;
+  background-color: #f88;
+  height: 60em;
+
+}
+
+.curated-posts-grid {
+  display: grid;
+  height: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  color: #fff;
+  font-size: 2em;
+}
+
+.curated-post {
+  background-color: #555;
+}
+
+.curated-posts-footer {
+  margin: 1em auto;
+  text-align: center;
+  width: 15%;
   border-bottom: 3px solid red;
 }
