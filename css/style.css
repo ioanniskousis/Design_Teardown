@@ -8,18 +8,87 @@ body {
   font-size: 1vw;
 }
 
-.page-nav {
-  background-color: #888;
-  height: 4em;
+/* NAVIGATION HEADER */
 
+.page-nav {
+  background-color: #ccc;
+  height: 13em;
+  margin-bottom: 1px;
+  display: flex;
+  
+  padding: 0.5em;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+}
+
+.page-nav-side-panel {
+  width: 20em;
+  background-color: #777;
+  flex: 1;
+}
+
+.page-nav-central-panel {
+  width: auto;
+  background-color: #aaa;
+  margin: 0 0.5em;
+  flex: 5;
+  display: flex;
+}
+
+.pncpL {
+  flex: 1.3;
+}
+
+.page-nav-button {
+  background-color: #898;
+  margin: 0 0.1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-nav-button p {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.2em 0;
+}
+.page-nav-img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+p.page-nav-button-desc {
+  font-weight: 100;
+  font-size: 1.1em;
+  /* font-style: italic; */
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
 }
 
 /* LATEST ARTICLES */
 
 .latest-articles-header {
-  background-color: #aaa;
+  text-align: center;
   height: 6em;
 }
+
+.latest-articles-header {
+  padding: 3em;
+  background-color: #aaa;
+  height: 13em;
+}
+
+.latest-articles-header p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2.5em;
+  line-height: 1.6em;
+  background-color: rgba(30, 30, 30, 0.5); 
+  color:rgba(250, 250, 250, 1);  
+  display: inline;
+  padding: 0.2em 0.5em;
+}
+
 
 .latest-articles-grid {
   display: grid;
@@ -152,7 +221,7 @@ body {
 
 .browse-topics {
   height: 5em;
-  background-color: #aaa;
+  background-color: #ccc;
 }
 
 .browse-links {
