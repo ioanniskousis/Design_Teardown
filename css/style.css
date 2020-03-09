@@ -31,6 +31,32 @@ body {
 .latest-article {
   background-color: #555;
   max-height: 25em;
-  
+}
 
+.latest-posts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  min-height: 80em;
+  background-color: #aaa;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.latest-post-item {
+  background-color: #555;
+  height: 25em;
+}
+
+.tall-item {
+  height: 40em;
+}
+
+.latest-posts-footer p {
+  margin: 2em auto ;
+  text-align: center;
+  width: 15%;  
+  /*width: auto;*/
+  border-bottom: 3px solid red;
 }
