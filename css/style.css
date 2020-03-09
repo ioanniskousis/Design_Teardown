@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1vw;
+}
+
+.page-nav {
+  background-color: #888;
+  height: 4em;
+
+}
+
+.latest-articles-header {
+  background-color: #aaa;
+  height: 6em;
+}
+
+.latest-articles-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 50em;
+
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.latest-article {
+  background-color: #555;
+  max-height: 25em;
+  
+
+}
