@@ -179,6 +179,8 @@ p.page-nav-button-desc {
   grid-gap: 1px;
   margin-top: 2em;
   width: 100%;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .latest-post-item {
@@ -196,6 +198,7 @@ p.page-nav-button-desc {
 .latest-post-description {
   height: 6em;
   background-color: #333;
+  font-size: 2em;
 }
 
 .latest-post-write {
