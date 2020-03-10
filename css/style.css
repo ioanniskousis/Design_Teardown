@@ -100,7 +100,7 @@ p.page-nav-button-desc {
   grid-template-columns: 1fr 1fr;
   height: 50em;
   margin-top: 1px;
-  grid-gap: 1px;
+  grid-gap: 1em;
   color: white;
   font-family: 'Varela Round', sans-serif;
   /* background-color:yellow; */
@@ -176,7 +176,7 @@ p.page-nav-button-desc {
   grid-template-columns: auto auto auto;
   min-height: 80em;
   /* background-color: #aaa; */
-  grid-gap: 1px;
+  grid-gap: 1em;
   margin-top: 2em;
   width: 100%;
   color: #fff;
@@ -185,7 +185,7 @@ p.page-nav-button-desc {
 
 .latest-post-item {
   /* background-color: #555; */
-  height: 25em;
+  height: 30em;
   display: flex;
   flex-direction: column;
 }
@@ -207,10 +207,17 @@ p.page-nav-button-desc {
   margin-top: 1px;
 }
 
+.latest-post-write a {
+  margin-left: 0.5em;
+  color: white;
+}
+
 .latest-post-breaf {
   background-color: #999;
   flex: 1;
   margin-top: 1px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5em;
 }
 
 .latest-post-arrow {
@@ -236,13 +243,31 @@ p.page-nav-button-desc {
 }
 
 .person-of-the-week-img {
-  width: 48em;
+  width: 16em;
   background-color: #555;
 }
 
 .person-of-the-week-text {
+  flex: 1;
+  padding-left: 0.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.person-of-the-week-header {
+  font-size: 1.5em;
   background-color: #888;
-  width: auto;
+  margin-bottom: 0.1em;
+  display: block;
+  height: 2em;
+}
+
+.person-of-the-week-body {
+  font-size: 1.5em;
+  background-color: #888;
+  display: block;
+  flex: 2;
 }
 
 .community-links {
@@ -256,7 +281,7 @@ p.page-nav-button-desc {
   color: #fff;
   margin-top: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   height: 85%;
   /* max-height: 40em; */
@@ -264,8 +289,51 @@ p.page-nav-button-desc {
 }
 
 .community-link {
+  /*background-color: #555;*/
+  /* height: 10em; */  
+  display: flex;
+
+}
+
+.community-link-author-image {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  height: 3em;
   background-color: #555;
-  /* height: 10em; */
+  width: 3em;
+  margin-right: 0.1em;
+}
+
+.community-link-author-image p {
+  font-size: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.community-link-details {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.community-link-writer {
+  background-color: #aaa;
+  flex: 1;
+}
+
+.community-link-title {
+  background-color: #777;
+  flex: 2;
+  margin-top: 0.1em;
+}
+
+.community-link-breaf {
+  background-color: #999;
+  flex: 3;
+  margin-top: 0.1em;
 }
 
 .community-links-footer {
