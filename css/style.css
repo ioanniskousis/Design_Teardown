@@ -12,6 +12,11 @@ main {
   margin: 0 2em;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 /* NAVIGATION HEADER */
 
 .page-nav {
@@ -122,12 +127,24 @@ p.page-nav-button-desc {
 .writers-image {
   width: 6em;
   background-color: #334;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writers-image p {
+  display: block;
+  text-align: center;
 }
 
 .writers-name {
   background-color: #777;
   flex: 1;
   margin-left: 1px;
+  font-size: 2em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
 }
 
 .article-description {
@@ -136,9 +153,11 @@ p.page-nav-button-desc {
   background-color: #aaa;
   flex: 1;
   font-size: 3em;
+  padding: 0.5em;
 }
 
 .article-description::after {
+  display: block;
   content: "Leave a comment";
   font-size: 0.5em;
   color: #77e;
@@ -199,12 +218,16 @@ p.page-nav-button-desc {
   height: 6em;
   background-color: #333;
   font-size: 2em;
+  padding: 0.5em;
 }
 
 .latest-post-write {
   height: 2em;
   background-color: #444;
   margin-top: 1px;
+  padding-left: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
 .latest-post-write a {
@@ -218,12 +241,17 @@ p.page-nav-button-desc {
   margin-top: 1px;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5em;
+  padding: 0.5em;
 }
 
 .latest-post-arrow {
   height: 2em;
   background-color: #888;
   margin-top: 1px;
+  background-image: url("../images/arrow-right.png");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  background-size: 2em 2em;
 }
 
 .latest-posts-footer p {
@@ -243,8 +271,27 @@ p.page-nav-button-desc {
 }
 
 .person-of-the-week-img {
+  box-sizing: border-box;
   width: 16em;
   background-color: #555;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-of-the-week-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-of-the-week-img-container p {
+  font-size: 1.5em;
+  width: 50%;
+  text-align: center;
 }
 
 .person-of-the-week-text {
@@ -261,6 +308,10 @@ p.page-nav-button-desc {
   margin-bottom: 0.1em;
   display: block;
   height: 2em;
+  padding: 0 1em;
+  display: flex;
+  align-items:center ;
+  justify-content: flex-start;
 }
 
 .person-of-the-week-body {
@@ -268,16 +319,18 @@ p.page-nav-button-desc {
   background-color: #888;
   display: block;
   flex: 2;
+  padding: 0.5em 1em;
 }
 
 .community-links {
   height: 60em;
-  background-color: #8f8;
+  /* background-color: #8f8; */
   margin-top: 1em;
 }
 
 .community-links-grid {
   font-size: 3em;
+  font-family: 'Varela Round', sans-serif;
   color: #fff;
   margin-top: 1em;
   display: grid;
@@ -285,7 +338,7 @@ p.page-nav-button-desc {
   grid-gap: 1em;
   height: 85%;
   /* max-height: 40em; */
-  background-color: #77f;
+  /* background-color: #77f; */
 }
 
 .community-link {
@@ -322,60 +375,113 @@ p.page-nav-button-desc {
 .community-link-writer {
   background-color: #aaa;
   flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 }
 
+.community-link-writer p {
+  font-size: 1.5rem;
+  /* margin-top: 50%; */
+}
 .community-link-title {
   background-color: #777;
   flex: 2;
+  display: flex;
+  align-items: center;
   margin-top: 0.1em;
+  padding-left: 1rem;
 }
 
+.community-link-title  p {
+  font-size: 1.5rem;
+}
 .community-link-breaf {
   background-color: #999;
   flex: 3;
+  display: flex;
+  align-items: center;
   margin-top: 0.1em;
+  padding-left: 1rem;
+}
+
+.community-link-breaf p {
+  font-size: 1.5rem;
 }
 
 .community-links-footer {
-  margin: 2em auto;
-  width: 14%;
-  border-bottom: 3px solid red;
+  margin-top: 4em;
   text-align: center;
+}
+
+.community-links-footer p {
+  display: inline-block;
+  margin: auto;
+  border-bottom: 3px solid red;
 }
 
 /* CURATED POSTS */
 
 .curated-posts {
-  margin-top: 5em;
-  background-color: #f88;
-  height: 60em;
+  /* margin-top: 2em; */
+  /* background-color: #f88; */
+  /* height: 60em; */
 
 }
 
 .curated-posts-grid {
   display: grid;
   height: 80%;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
   color: #fff;
   font-size: 2em;
 }
 
 .curated-post {
+  /* background-color: #555; */
+  display: flex;
+  flex-direction: column;
+}
+
+.curated-post-title {
+  height: 2em;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.curated-post-links {
+  margin-top: 0.2em;
+  flex: 1;
+  background-color: #aaaa;
+  padding: 0.3em 0.5em 0 0.5em;
+}
+
+.curated-post-links li {
+  display: block;
   background-color: #555;
+  height: 2em;
+  margin-top: 0.2em;
+
 }
 
 .curated-posts-footer {
-  margin: 1em auto;
+  margin-top: 4em;
   text-align: center;
-  width: 15%;
+}
+
+.curated-posts-footer p {
+  display: inline-block;
+  margin: auto;
   border-bottom: 3px solid red;
 }
 
 /* PAGE FOOTER */
 
 .page-footer {
-  margin-top: 1em;
+  margin: 2em 0 4em 0;
   background-color: #ccc;
   height: 40em;
 }
