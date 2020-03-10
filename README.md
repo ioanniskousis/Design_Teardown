@@ -15,7 +15,7 @@ Illustration of the terms of visual hierarchy, typography and design principles
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/ioanniskousis/Design_Teardown/838fed6e969c21cfd44ee6d12b81b6db264508eb/index.html)
 
 ## Getting Started
 
