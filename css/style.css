@@ -126,10 +126,13 @@ p.page-nav-button-desc {
 
 .writers-image {
   width: 6em;
-  background-color: #334;
+  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
 }
 
 .writers-image p {
@@ -279,6 +282,9 @@ p.page-nav-button-desc {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
 }
 
 .person-of-the-week-img-container {
@@ -325,11 +331,11 @@ p.page-nav-button-desc {
 .community-links {
   height: 60em;
   /* background-color: #8f8; */
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .community-links-grid {
-  font-size: 3em;
+  /*font-size: 3em;*/
   font-family: 'Varela Round', sans-serif;
   color: #fff;
   margin-top: 1em;
@@ -353,14 +359,17 @@ p.page-nav-button-desc {
   flex-direction: column;
   align-items:center ;
   justify-content: center;
-  height: 3em;
+  height: 8em;
   background-color: #555;
-  width: 3em;
+  width: 8em;
   margin-right: 0.1em;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
 }
 
 .community-link-author-image p {
-  font-size: 1rem;
+  font-size: 1em;
   width: 50%;
   text-align: center;
 }
@@ -381,7 +390,7 @@ p.page-nav-button-desc {
 }
 
 .community-link-writer p {
-  font-size: 1.5rem;
+  font-size: 2em;
   /* margin-top: 50%; */
 }
 .community-link-title {
@@ -394,7 +403,7 @@ p.page-nav-button-desc {
 }
 
 .community-link-title  p {
-  font-size: 1.5rem;
+  font-size: 2em;
 }
 .community-link-breaf {
   background-color: #999;
@@ -406,7 +415,7 @@ p.page-nav-button-desc {
 }
 
 .community-link-breaf p {
-  font-size: 1.5rem;
+  font-size: 2em;
 }
 
 .community-links-footer {
@@ -487,13 +496,44 @@ p.page-nav-button-desc {
 }
 
 .browse-topics {
-  height: 5em;
+  height: 2em;
   background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
 }
 
 .browse-links {
   height: 15em;
   background-color: #575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em 4em;
+  align-content: center;
+}
+
+.browse-link {
+  width: 6em;
+  margin: 1em;
+  background-color: #555;
+  height: 1.5em;
+}
+
+.bl10 {
+  width: 10em;
+}
+
+.bl4 {
+  width: 4em;
+}
+
+.bl3 {
+  width: 3em;
 }
 
 .browse-bottom {
@@ -514,6 +554,12 @@ p.page-nav-button-desc {
 .browse-bottom-center-lower {
   background-color: #575;
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em 4em;
+  align-content: center;
 }
 
 .browse-bottom-center-upper {
