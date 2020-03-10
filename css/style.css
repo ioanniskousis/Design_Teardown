@@ -1,0 +1,533 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1vw;
+}
+
+main {
+  margin: 0 2em;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* NAVIGATION HEADER */
+
+.page-nav {
+  height: 13em;
+  margin-bottom: 1px;
+  display: flex;
+  padding: 0.5em;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+}
+
+.page-nav-side-panel {
+  width: 20em;
+  background-color: #777;
+  flex: 1;
+}
+
+.page-nav-central-panel {
+  width: auto;
+  margin: 0 0.5em;
+  flex: 5;
+  display: flex;
+}
+
+.pncpL {
+  flex: 1.3;
+}
+
+.page-nav-button {
+  background-color: #898;
+  margin: 0 0.1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-nav-button p {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.2em 0;
+}
+
+.page-nav-img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+p.page-nav-button-desc {
+  font-weight: 100;
+  font-size: 1.1em;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+}
+
+/* LATEST ARTICLES */
+
+.latest-articles-header {
+  text-align: center;
+  padding: 3em;
+  background-color: #aaa;
+  height: 13em;
+}
+
+.latest-articles-header p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2.5em;
+  line-height: 1.6em;
+  background-color: rgba(30, 30, 30, 0.5);
+  color: rgba(250, 250, 250, 1);
+  display: inline;
+  padding: 0.2em 0.5em;
+}
+
+.latest-articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50em;
+  margin-top: 1px;
+  grid-gap: 1em;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.latest-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-header {
+  height: 6em;
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.writers-image {
+  width: 6em;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
+}
+
+.writers-image p {
+  display: block;
+  text-align: center;
+}
+
+.writers-name {
+  background-color: #777;
+  flex: 1;
+  margin-left: 1px;
+  font-size: 2em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.article-description {
+  background-color: #aaa;
+  flex: 1;
+  font-size: 3em;
+  padding: 0.5em;
+}
+
+.article-description::after {
+  display: block;
+  content: "Leave a comment";
+  font-size: 0.5em;
+  color: #77e;
+}
+
+.article-comments {
+  height: 2em;
+  margin-top: 1px;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.article-comments-type {
+  background-color: #666;
+  width: 10em;
+  margin-right: 0.2em;
+  height: 100%;
+}
+
+.article-arrow {
+  margin-top: 1px;
+  background-color: #666;
+  height: 2em;
+  width: 10em;
+  background-image: url("../images/arrow-right.png");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  background-size: 2em 2em;
+}
+
+/* LATEST POSTS */
+
+.latest-posts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  min-height: 80em;
+  grid-gap: 1em;
+  margin-top: 2em;
+  width: 100%;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.latest-post-item {
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+}
+
+.tall-item {
+  height: 40em;
+  background-color: #555;
+}
+
+.latest-post-description {
+  height: 6em;
+  background-color: #333;
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.latest-post-write {
+  height: 2em;
+  background-color: #444;
+  margin-top: 1px;
+  padding-left: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.latest-post-write a {
+  margin-left: 0.5em;
+  color: white;
+}
+
+.latest-post-breaf {
+  background-color: #999;
+  flex: 1;
+  margin-top: 1px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+.latest-post-arrow {
+  height: 2em;
+  background-color: #888;
+  margin-top: 1px;
+  background-image: url("../images/arrow-right.png");
+  background-position: 1em center;
+  background-repeat: no-repeat;
+  background-size: 2em 2em;
+}
+
+.latest-posts-footer p {
+  margin: 2em auto;
+  text-align: center;
+  width: 15%;
+  border-bottom: 3px solid red;
+}
+
+/* COMMUNITY LINKS */
+
+.person-of-the-week {
+  display: flex;
+  height: 16em;
+}
+
+.person-of-the-week-img {
+  box-sizing: border-box;
+  width: 16em;
+  background-color: #555;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
+}
+
+.person-of-the-week-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-of-the-week-img-container p {
+  font-size: 1.5em;
+  width: 50%;
+  text-align: center;
+}
+
+.person-of-the-week-text {
+  flex: 1;
+  padding-left: 0.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.person-of-the-week-header {
+  font-size: 1.5em;
+  background-color: #888;
+  margin-bottom: 0.1em;
+  height: 2em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.person-of-the-week-body {
+  font-size: 1.5em;
+  background-color: #888;
+  display: block;
+  flex: 2;
+  padding: 0.5em 1em;
+}
+
+.community-links {
+  height: 60em;
+  margin-top: 3em;
+}
+
+.community-links-grid {
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  height: 85%;
+}
+
+.community-link {
+  display: flex;
+}
+
+.community-link-author-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8em;
+  background-color: #555;
+  width: 8em;
+  border-radius: 1em;
+  margin-right: 1em;
+  transform: rotate(-10deg);
+}
+
+.community-link-author-image p {
+  font-size: 1em;
+  width: 50%;
+  text-align: center;
+}
+
+.community-link-details {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.community-link-writer {
+  background-color: #aaa;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.community-link-writer p {
+  font-size: 2em;
+}
+
+.community-link-title {
+  background-color: #777;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 0.1em;
+  padding-left: 1rem;
+}
+
+.community-link-title p {
+  font-size: 2em;
+}
+
+.community-link-breaf {
+  background-color: #999;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  margin-top: 0.1em;
+  padding-left: 1rem;
+}
+
+.community-link-breaf p {
+  font-size: 2em;
+}
+
+.community-links-footer {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.community-links-footer p {
+  display: inline-block;
+  margin: auto;
+  border-bottom: 3px solid red;
+}
+
+/* CURATED POSTS */
+
+.curated-posts-grid {
+  display: grid;
+  height: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  color: #fff;
+  font-size: 2em;
+}
+
+.curated-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.curated-post-title {
+  height: 2em;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.curated-post-links {
+  margin-top: 0.2em;
+  flex: 1;
+  background-color: #aaaa;
+  padding: 0.3em 0.5em 0 0.5em;
+}
+
+.curated-post-links li {
+  display: block;
+  background-color: #555;
+  height: 2em;
+  margin-top: 0.2em;
+}
+
+.curated-posts-footer {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.curated-posts-footer p {
+  display: inline-block;
+  margin: auto;
+  border-bottom: 3px solid red;
+}
+
+/* PAGE FOOTER */
+
+.page-footer {
+  margin: 2em 0 4em 0;
+  background-color: #ccc;
+  height: 40em;
+}
+
+.browse-topics {
+  height: 2em;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.browse-links {
+  height: 15em;
+  background-color: #575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em 4em;
+  align-content: center;
+}
+
+.browse-link {
+  width: 6em;
+  margin: 1em;
+  background-color: #555;
+  height: 1.5em;
+}
+
+.bl10 {
+  width: 10em;
+}
+
+.bl4 {
+  width: 4em;
+}
+
+.bl3 {
+  width: 3em;
+}
+
+.browse-bottom {
+  background-color: #aaa;
+  height: 20em;
+  display: flex;
+}
+
+.browse-bottom-left,
+.browse-bottom-right {
+  width: 30%;
+}
+
+.browse-bottom-center {
+  width: 40%;
+  background-color: #999;
+}
+
+.browse-bottom-center-lower {
+  background-color: #575;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em 4em;
+  align-content: center;
+}
+
+.browse-bottom-center-upper {
+  height: 50%;
+}
