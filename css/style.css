@@ -20,11 +20,9 @@ main {
 /* NAVIGATION HEADER */
 
 .page-nav {
-  /* background-color: #ccc; */
   height: 13em;
   margin-bottom: 1px;
   display: flex;
-  
   padding: 0.5em;
   font-family: 'Varela Round', sans-serif;
   color: #fff;
@@ -38,7 +36,6 @@ main {
 
 .page-nav-central-panel {
   width: auto;
-  /* background-color: #aaa; */
   margin: 0 0.5em;
   flex: 5;
   display: flex;
@@ -71,7 +68,6 @@ main {
 p.page-nav-button-desc {
   font-weight: 100;
   font-size: 1.1em;
-  /* font-style: italic; */
   font-family: 'Cormorant Garamond', serif;
   margin: 0;
 }
@@ -80,10 +76,6 @@ p.page-nav-button-desc {
 
 .latest-articles-header {
   text-align: center;
-  height: 6em;
-}
-
-.latest-articles-header {
   padding: 3em;
   background-color: #aaa;
   height: 13em;
@@ -93,12 +85,11 @@ p.page-nav-button-desc {
   font-family: 'Varela Round', sans-serif;
   font-size: 2.5em;
   line-height: 1.6em;
-  background-color: rgba(30, 30, 30, 0.5); 
-  color:rgba(250, 250, 250, 1);  
+  background-color: rgba(30, 30, 30, 0.5);
+  color: rgba(250, 250, 250, 1);
   display: inline;
   padding: 0.2em 0.5em;
 }
-
 
 .latest-articles-grid {
   display: grid;
@@ -108,14 +99,11 @@ p.page-nav-button-desc {
   grid-gap: 1em;
   color: white;
   font-family: 'Varela Round', sans-serif;
-  /* background-color:yellow; */
 }
- 
+
 .latest-article {
-  /* max-height: 25em; */
   display: flex;
   flex-direction: column;
-  
 }
 
 .article-header {
@@ -151,8 +139,6 @@ p.page-nav-button-desc {
 }
 
 .article-description {
-  padding-top: 0.5em;
-  /* height: auto; */
   background-color: #aaa;
   flex: 1;
   font-size: 3em;
@@ -167,7 +153,6 @@ p.page-nav-button-desc {
 }
 
 .article-comments {
-  /* background-color: #666; */
   height: 2em;
   margin-top: 1px;
   display: flex;
@@ -180,6 +165,7 @@ p.page-nav-button-desc {
   margin-right: 0.2em;
   height: 100%;
 }
+
 .article-arrow {
   margin-top: 1px;
   background-color: #666;
@@ -197,7 +183,6 @@ p.page-nav-button-desc {
   display: grid;
   grid-template-columns: auto auto auto;
   min-height: 80em;
-  /* background-color: #aaa; */
   grid-gap: 1em;
   margin-top: 2em;
   width: 100%;
@@ -206,7 +191,6 @@ p.page-nav-button-desc {
 }
 
 .latest-post-item {
-  /* background-color: #555; */
   height: 30em;
   display: flex;
   flex-direction: column;
@@ -258,10 +242,9 @@ p.page-nav-button-desc {
 }
 
 .latest-posts-footer p {
-  margin: 2em auto ;
+  margin: 2em auto;
   text-align: center;
-  width: 15%;  
-  /*width: auto;*/
+  width: 15%;
   border-bottom: 3px solid red;
 }
 
@@ -270,7 +253,6 @@ p.page-nav-button-desc {
 .person-of-the-week {
   display: flex;
   height: 16em;
-
 }
 
 .person-of-the-week-img {
@@ -312,11 +294,10 @@ p.page-nav-button-desc {
   font-size: 1.5em;
   background-color: #888;
   margin-bottom: 0.1em;
-  display: block;
   height: 2em;
   padding: 0 1em;
   display: flex;
-  align-items:center ;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -330,12 +311,10 @@ p.page-nav-button-desc {
 
 .community-links {
   height: 60em;
-  /* background-color: #8f8; */
   margin-top: 3em;
 }
 
 .community-links-grid {
-  /*font-size: 3em;*/
   font-family: 'Varela Round', sans-serif;
   color: #fff;
   margin-top: 1em;
@@ -343,26 +322,20 @@ p.page-nav-button-desc {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   height: 85%;
-  /* max-height: 40em; */
-  /* background-color: #77f; */
 }
 
 .community-link {
-  /*background-color: #555;*/
-  /* height: 10em; */  
   display: flex;
-
 }
 
 .community-link-author-image {
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
   height: 8em;
   background-color: #555;
   width: 8em;
-  margin-right: 0.1em;
   border-radius: 1em;
   margin-right: 1em;
   transform: rotate(-10deg);
@@ -391,8 +364,8 @@ p.page-nav-button-desc {
 
 .community-link-writer p {
   font-size: 2em;
-  /* margin-top: 50%; */
 }
+
 .community-link-title {
   background-color: #777;
   flex: 2;
@@ -402,9 +375,10 @@ p.page-nav-button-desc {
   padding-left: 1rem;
 }
 
-.community-link-title  p {
+.community-link-title p {
   font-size: 2em;
 }
+
 .community-link-breaf {
   background-color: #999;
   flex: 3;
@@ -431,13 +405,6 @@ p.page-nav-button-desc {
 
 /* CURATED POSTS */
 
-.curated-posts {
-  /* margin-top: 2em; */
-  /* background-color: #f88; */
-  /* height: 60em; */
-
-}
-
 .curated-posts-grid {
   display: grid;
   height: 80%;
@@ -448,7 +415,6 @@ p.page-nav-button-desc {
 }
 
 .curated-post {
-  /* background-color: #555; */
   display: flex;
   flex-direction: column;
 }
@@ -473,7 +439,6 @@ p.page-nav-button-desc {
   background-color: #555;
   height: 2em;
   margin-top: 0.2em;
-
 }
 
 .curated-posts-footer {
@@ -542,7 +507,8 @@ p.page-nav-button-desc {
   display: flex;
 }
 
-.browse-bottom-left, .browse-bottom-right {
+.browse-bottom-left,
+.browse-bottom-right {
   width: 30%;
 }
 
